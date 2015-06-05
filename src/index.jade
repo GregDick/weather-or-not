@@ -1,0 +1,15 @@
+doctype html
+html(lang="en-US", ng-app="weatherOrNot")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Weather or Not (get it?)
+    link(rel="stylesheet" href="lib/build.css")
+    link(rel="stylesheet" href="css/main.css")
+  body(ng-controller='Main as main')
+    .container
+      h1  Hey there, it's {{main.temperature}} degrees in {{main.place}}
+      h2  The humidity is {{main.humidity}}
+    script(src="lib/build.js")
+    script(src="js/main.js")
