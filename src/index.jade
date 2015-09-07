@@ -11,5 +11,9 @@ html(lang="en-US", ng-app="weatherOrNot")
     .container
       h1  Hey there, it's {{main.temperature}} degrees in {{main.place}}
       h2  The humidity is {{main.humidity}}
+
+      input(placeholder='Enter Zip', ng-model='zipCode')
+      button: a(href="/#/{{zipCode}}") Get Weather!
+    .app(ng-view)
     script(src="lib/build.js")
     script(src="js/main.js")

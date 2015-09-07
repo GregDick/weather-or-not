@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GregDick/weather-or-not"
+    "url": "https://github.com/GregDick/weather-or-not",
+    "start": "grunt serve"
   },
   "author": "Greg Dick <gregory.j.dick@vanderbilt.edu>",
   "license": "MIT",
